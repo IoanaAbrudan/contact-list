@@ -15,6 +15,8 @@
   "dependencies": {
     "bootstrap": "^3.3.6",
     "angular": "^1.5.7",
-    "jquery": "^3.1.0"
+    "jquery": "^3.1.0",
+    "angular-ui-router": "^0.3.1",
+    "angular-date-dropdowns": "^0.1.1"
   }
 }

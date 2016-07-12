@@ -5,14 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
 </head>
-<body ng-app="contacts" ng-controller="MainController as main">
-    {{main.firstName}}
+<body ng-app="contacts">
 
+ <div ui-view></div>
 
-
+<!-- Dependencies -->
 <script src="bower_components/jquery/dist/jquery.min.js"></script>
 <script src="bower_components/angular/angular.min.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.min.js"> </script>
+<script src="bower_components/angular-date-dropdowns/directive.js"></script>
+
+<!-- Project Files -->
 <script src="app.js"></script>
-<script src="controllers/MainController.js"></script>
+<script src="config.js"></script>
+<script src="controllers/RegisterController.js"></script>
+
 </body>
 </html>

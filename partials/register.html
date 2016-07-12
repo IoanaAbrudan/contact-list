@@ -1,0 +1,69 @@
+<form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">First Name</label>
+    <input type="text" class="form-control" ng-model="register.user.firstName" placeholder="First Name ">
+  </div>
+   <div class="form-group">
+    <label for="exampleInputEmail1">Last Name</label>
+    <input type="text" class="form-control" ng-model="register.user.lastName" placeholder="Last Name ">
+  </div>
+<div class="form-group">
+    <label for="exampleInputEmail1">Country</label>
+    <select class="form-control" ng-model="register.user.country" ng-options="country as country.name for country in register.country">
+    </select>
+  </div>  
+  <div class="form-group">
+    <label for="exampleInputEmail1">City</label>
+    <input type="text" class="form-control" ng-model="register.user.city" placeholder="City">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Birthday</label>
+      <input rsmdatedropdowns ng-model="register.user.birthday" ng-required=“false”>
+    
+
+    <!--<label for="exampleInputPassword1" class="day-div-class">Day
+   
+    </label>
+    <select class="form-control" ng-model="day" ng-options="day for day in register.days">
+    </select> 
+    <label for="exampleInputPassword1" class="month-div-class">Month</label>
+    <select class="form-control">
+        <option>January</option>
+        <option>February</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>Octomber</option>
+        <option>November</option>
+        <option>December</option> 
+    </select>
+    <label for="exampleInputPassword1" class="year-div-class">Year</label>
+    <select class="form-control" ng-model="year" ng-options="year for year in register.years">
+    </select>
+      
+  </div>
+  <div>-->
+  </div>
+   <div class="form-group">
+    <label for="exampleInputPassword1">Email</label>
+    <input type="email" class="form-control" ng-model="register.user.email" placeholder="Email">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" ng-model="register.user.password" placeholder="Password">  
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Confirm Password</label>
+    <input type="password" name="confirmPassword" class="form-control" ng-model="register.user.confirmPassword" placeholder="Password">  
+  </div>
+  <div class="checkbox">
+    <label>
+      <input type="checkbox"> Check me out
+    </label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+</form>
