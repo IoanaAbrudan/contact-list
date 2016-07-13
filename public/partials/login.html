@@ -1,5 +1,5 @@
 <div class="login">
-    <a ui-sref=“register”>Don’t have an account yet? Sign up here</a>
+    <a ui-sref="register">Don’t have an account yet? Sign up here</a>
     <form class="w3-container">
 
     <label class="w3-label">Email</label>
@@ -7,6 +7,6 @@
 
     <label class="w3-label">Password</label>
     <input  class="w3-input" type="password" placeholder="Password" ng-model="login.user.password">
-    <button type="submit" class=" w3-radio btn btn-default">Login</button>
+    <button type="submit" class=" w3-radio btn btn-default" ng-model="login.submit">Login</button>
 </form>
 </div>

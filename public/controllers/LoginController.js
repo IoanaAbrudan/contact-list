@@ -11,15 +11,20 @@ app.controller('LoginController', function($http){
     var vm.user = {};
 
     vm.login = function{
+        if(submit()){
 
        $http({
             method: 'POST',
             url: '/v1/session',
             data: vm.user
+
         }).then(function (response){
-             
+            
         });
 
+
+
                     }
-    debbuger;
+
+}
 }
