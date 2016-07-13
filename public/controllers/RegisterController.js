@@ -18,26 +18,45 @@ app.controller('RegisterController', function($http) {
         vm.years.push(i);
     }
     
-
-    
     $http.get('https://restcountries.eu/rest/v1/all').then(function (response) {
       
        vm.country = response.data;
         
       });
-    vm.count = 0;
-    vm.count1 = 0;
     vm.checkPasswordValidity = function () {
-        if (vm.user.password === vm.user.confirmPassword) {
-            console.log('ok');
+        vm.errorMessage = '';
+        if (vm.user.password !== vm.user.confirmPassword) {
+            vm.errorMessage = "Passwords don't match";
         }
-        else {
-            console.log('not ok');
+       
+    };
+
+    vm.register = function () {
+
+        vm.errorMessage = '';
+
+        if (!vm.user.email) {
+            vm.errorMessage = 'Email is required';
+            return;
         }
-        // vm.count++;
-    }
+        vm.errorMessage = '';
+       if(!vm.submit){
+        vm.errorMessage = "You don't checked";
+       }
+
+
+        debugger;
+        $http({
+            method: 'POST',
+            url: '/v1/session/create',
+            data: vm.user
+        }).then(function (response){
+             
+        });
+    };
 });
  
+
 
 
 
