@@ -1,0 +1,31 @@
+{
+  "name": "contact-list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/IoanaAbrudan/contact-list.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/IoanaAbrudan/contact-list/issues"
+  },
+  "homepage": "https://github.com/IoanaAbrudan/contact-list#readme",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "bower": "^1.7.9",
+    "crypto": "0.0.3",
+    "express": "^4.14.0",
+    "lodash": "^4.13.1",
+    "method-override": "^2.3.6",
+    "mongoose": "^4.5.4",
+    "passport": "^0.3.2",
+    "passport-local": "^1.0.0",
+    "passport-local-mongoose": "^4.0.0"
+  }
+}
