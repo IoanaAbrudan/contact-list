@@ -1,11 +1,12 @@
 <div class="login">
+    <a ui-sref=“register”>Don’t have an account yet? Sign up here</a>
     <form class="w3-container">
 
     <label class="w3-label">Email</label>
-    <input required class="w3-input" type="text" placeholder="Email">
+    <input class="w3-input" type="text" placeholder="Email" ng-model="login.user.email">
 
     <label class="w3-label">Password</label>
-    <input required class="w3-input" type="password" placeholder="Password">
+    <input  class="w3-input" type="password" placeholder="Password" ng-model="login.user.password">
     <button type="submit" class=" w3-radio btn btn-default">Login</button>
 </form>
 </div>

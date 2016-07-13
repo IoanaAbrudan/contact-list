@@ -54,6 +54,8 @@ app.controller('RegisterController', function($http) {
              
         });
     };
+    
+    
 });
  
 
