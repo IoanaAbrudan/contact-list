@@ -10,7 +10,9 @@ var config = function ($stateProvider, $urlRouterProvider) {
   $stateProvider
     .state('login', {
       url: '/login',
-      templateUrl: 'partials/login.html'
+      templateUrl: 'partials/login.html',
+      controller:'LoginController',
+      controllerAs: 'login'
     })
     .state('register', {
       url:'/register',

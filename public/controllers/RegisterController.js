@@ -4,7 +4,7 @@
  */
 
 var app = angular.module('contacts');
-app.controller('RegisterController', function($http) {
+app.controller('RegisterController', function($http, $state) {
     var vm = this;
 
     vm.user = {};
@@ -45,7 +45,7 @@ app.controller('RegisterController', function($http) {
        }
 
 
-        debugger;
+        
         $http({
             method: 'POST',
             url: '/v1/session/create',
@@ -54,8 +54,8 @@ app.controller('RegisterController', function($http) {
              
         });
     };
-    
-    
+
+     $state.go('dashboard');
 });
  
 

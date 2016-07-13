@@ -5,13 +5,13 @@
 
 
 var app = angular.module('contacts');
-app.controller('LoginController', function($http){
+app.controller('LoginController', function($http,$state){
     var vm = this;
 
-    var vm.user = {};
+     vm.user = {};
 
-    vm.login = function{
-        if(submit()){
+    vm.login = function() {
+
 
        $http({
             method: 'POST',
@@ -22,9 +22,7 @@ app.controller('LoginController', function($http){
             
         });
 
-
-
-                    }
-
+  $state.go('dashboard');
+                
 }
-}
+});
