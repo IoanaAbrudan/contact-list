@@ -25,7 +25,17 @@ app.controller('RegisterController', function($http) {
        vm.country = response.data;
         
       });
-    
+    vm.count = 0;
+    vm.count1 = 0;
+    vm.checkPasswordValidity = function () {
+        if (vm.user.password === vm.user.confirmPassword) {
+            console.log('ok');
+        }
+        else {
+            console.log('not ok');
+        }
+        // vm.count++;
+    }
 });
  
 
