@@ -45,6 +45,7 @@ form {
   }
 
 .login{
+    padding: 20px;
     position: initial;
     display: flex;
     flex-direction: column;
@@ -53,4 +54,10 @@ form {
     flex:1;
     background-color: #f7f7f7;
 }
-
+.body{
+     background-color: #f7f7f7;   
+}
+.w3-radio{
+    justify-content: center;
+    align-items: center;
+} 
