@@ -1,0 +1,11 @@
+<div class="login">
+<a ui-sref="register">Don’t have an account yet? Sign up here</a>
+    <form class="w3-container" ng-submit="login.login()">
+        <label class="w3-label">Email</label>
+        <input class="w3-input" type="text" placeholder="Email" ng-model="login.user.email">
+        <label class="w3-label">Password</label>
+        <input  class="w3-input" type="password" placeholder="Password" ng-model="login.user.password">
+        <button type="submit" class=" w3-radio btn btn-default">Login</button>
+        <div class="alert alert-danger" ng-if="login.errorMessage" >{{login.errorMessage}}</div>
+    </form>
+</div>

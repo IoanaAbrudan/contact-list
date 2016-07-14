@@ -1,0 +1,63 @@
+form {
+    background-color: #f7f7f7;
+}
+
+.w3-container {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    position: fixed;       
+}
+
+.w3-input {
+    background-color: #f7f7f7;
+}
+
+.form-group {
+    background-color: #f7f7f7
+    border: none;
+    font-size: 15px;
+    padding: 5px; 
+    width: 40%;
+    position: center;
+  }
+
+#birthday {
+    width: 300px;
+    margin-right: 60px;
+  }
+
+.inline-form-container {
+    display: flex;
+    }
+
+.inline-form-container > * {
+    flex: 1;
+  }
+
+.register-form {
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    }
+
+.login {
+    padding: 20px;
+    position: initial;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    background-color: #f7f7f7;
+    }
+
+.body {
+     background-color: #f7f7f7;   
+}
+.w3-radio{
+    justify-content: center;
+    align-items: center;
+} 
