@@ -1,28 +1,26 @@
 form {
     background-color: #f7f7f7;
-
 }
 
+.w3-container {
+    background-color: #f7f7f7;
+    margin-bottom: 10px;
+    position: fixed;       
 }
-.w3-container{
-     background-color: #f7f7f7;
-     margin-bottom: 10px;
-     position: fixed;
-        
-}
-.w3-input{
+
+.w3-input {
     background-color: #f7f7f7;
 }
-.form-group {
 
+.form-group {
     background-color: #f7f7f7
-      border: none;
-      font-size: 15px;
-      padding: 5px; 
-      width: 40%;
-     position: center;
+    border: none;
+    font-size: 15px;
+    padding: 5px; 
+    width: 40%;
+    position: center;
   }
-  #birthday{
+  #birthday {
     width: 300px;
     margin-right: 60px;
   }
@@ -44,7 +42,7 @@ form {
     flex:1;
   }
 
-.login{
+.login {
     padding: 20px;
     position: initial;
     display: flex;
@@ -53,8 +51,9 @@ form {
     align-items: center;
     flex:1;
     background-color: #f7f7f7;
-}
-.body{
+    }
+
+.body {
      background-color: #f7f7f7;   
 }
 .w3-radio{

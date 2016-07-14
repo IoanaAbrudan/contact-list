@@ -1,6 +1,6 @@
 /**
- * Descriere:
- * Author: 
+ * Descriere: Angular main module definition
+ * Author: Ioana Abrudan
  */
 
 'use strict';

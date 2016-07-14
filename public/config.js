@@ -1,6 +1,6 @@
 /**
 * App config
-* Author:
+* Author: Ioana Abrudan
 */
 
 'use strict';
