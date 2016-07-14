@@ -8,17 +8,11 @@ var app = angular.module('contacts');
 app.controller('DashboardController', function($http, $state){
     var vm = this;
 
-    vm.contacts = {};
-
-    vm.contacts = function() {
-
        $http({
-            method: 'POST',
-            url: 'contacts/:contactId',
-            data: vm.contacts
-
-       
-    });
-       debbuger;
-}
+            method: 'GET',
+            url: '/v1/contacts',
+    }).then(function (response) {    
+     vm.contact = response.data;
+     debugger;
+});
 });
