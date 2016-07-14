@@ -1,6 +1,6 @@
 /**
  * Descriere: Controller for everything regarding the login process
- * Author: 
+ * Author: Ioana Abrudan
  */
 
 
@@ -11,15 +11,24 @@ app.controller('LoginController', function($http, $state){
     vm.user = {};
 
     vm.login = function() {
-        
+
        $http({
             method: 'POST',
             url: '/v1/session',
             data: vm.user
 
-        }).then(function (response){
+        }).then(function (response) { 
              $state.go('dashboard');
         });
-                    
-        }
+
+         vm.errorMessage = '';
+         $http({
+            method: 'POST',
+            url: '/v1/session',
+            data: vm.errorMessage()
+        }).succes(function (response) {
+
+            
+        });
+    }
 });

@@ -20,27 +20,28 @@ form {
     width: 40%;
     position: center;
   }
-  #birthday {
+
+#birthday {
     width: 300px;
     margin-right: 60px;
   }
 
-  .inline-form-container {
+.inline-form-container {
     display: flex;
-  }
+    }
 
-  .inline-form-container > * {
+.inline-form-container > * {
     flex: 1;
   }
 
-  .register-form {
+.register-form {
     position: initial;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex:1;
-  }
+    }
 
 .login {
     padding: 20px;
