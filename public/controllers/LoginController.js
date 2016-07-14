@@ -30,7 +30,7 @@ app.controller('LoginController', function($http, $state){
             $state.go('dashboard');
             
         }).error(function(response) {
-             vm.errorMessage = err.response;
+             vm.errorMessage = response.err;
             debugger;
         });
     }
