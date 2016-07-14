@@ -26,11 +26,11 @@ app.controller('LoginController', function($http, $state){
             method: 'POST',
             url: '/v1/session',
             data: vm.user
-        }).succes(function (response) {
+        }).success(function (response) {
             $state.go('dashboard');
             
-        }).error(function(response){
-            vm.errorMessage;
+        }).error(function(response) {
+             vm.errorMessage = err.response;
             debugger;
         });
     }
