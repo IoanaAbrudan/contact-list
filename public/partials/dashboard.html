@@ -1,12 +1,30 @@
-<ul class="w3-ul w3-card-4"> 
+<ul class="w3-ul w3-card-4" ng-repeat="contact in contacts"> 
   <li class="w3-padding-16">
     <span onclick="this.parentElement.style.display='none'"
     class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
-    <img src="./partials/img_avatar2.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <img src="https://www.renderosity.com/templates/renderositybootstrap/image/default_avatar.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
     <span class="w3-xlarge">Mike</span><br>
     <span>Web Designer</span>
     <br>
     <br>
+    <input type="name" class="w3-input" placeholder="name">{{contact.name}}
+    <input type="email" class="w3-input" placeholder="email">
+    {{contact.email}}
+    <input type="address" class="w3-input" placeholder="address">
+    {{contact.address}}
+    <input type="phone" class="w3-input" placeholder="phone">
+    {{contact.phone}}
+    <input type="ocuppation" class="w3-input" placeholder="ocuppation">
+    {{contact.ocuppation}}
+    <input type="user" class="w3-input" placeholder="user">
+    {{contact.user}}
+  </li>
+  <li class="w3-padding-16 ">
+   <span onclick="this.parentElement.style.display='none'"
+    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
+    <img src="https://www.renderosity.com/templates/renderositybootstrap/image/default_avatar.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+    <span class="w3-xlarge">Ana</span><br>
+    <span>Support</span>
     <input type="nume" class="w3-input" placeholder="Nume">
     <input type="email" class="w3-input" placeholder="Email">
     <input type="address" class="w3-input" placeholder="Address">
@@ -15,3 +33,4 @@
 
 
 </ul>
+<button type="submit" class=" w3-radio btn btn-default">Add contact</button>
