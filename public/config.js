@@ -20,7 +20,12 @@ var config = function ($stateProvider, $urlRouterProvider) {
       controller: 'RegisterController',
       controllerAs: 'register'
     })
-    
+     .state('dashboard', {
+      url:'/dashboard',
+      templateUrl: 'partials/dashboard.html',
+      controller: 'DashboardController',
+      controllerAs: 'dashboard'
+    })
 };
 
 angular.module('contacts').config(config);
