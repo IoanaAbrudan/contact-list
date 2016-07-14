@@ -25,10 +25,13 @@ app.controller('LoginController', function($http, $state){
          $http({
             method: 'POST',
             url: '/v1/session',
-            data: vm.errorMessage()
+            data: vm.user
         }).succes(function (response) {
-
+            $state.go('dashboard');
             
+        }).error(function(response){
+            vm.errorMessage;
+            debugger;
         });
     }
 });
