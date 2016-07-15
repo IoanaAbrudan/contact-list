@@ -1,7 +1,5 @@
 <ul class="w3-ul w3-card-4"> 
     <li class="w3-padding-16" ng-repeat="contact in dashboard.contacts">
-    <span onclick="this.parentElement.style.display='none'"
-    class="w3-closebtn w3-padding w3-margin-right w3-medium">x</span>
     <img src="https://www.renderosity.com/templates/renderositybootstrap/image/default_avatar.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
     <span class="w3-xlarge"></span><br>
     <p>{{contact.name}}</p>
@@ -9,4 +7,4 @@
     <p>{{contact.phone}}</p>
     </li>
 </ul>
-<button type="submit" class=" w3-radio btn btn-default">Add contact</button>
+<button type="submit" class=" w3-radio btn btn-default" id="button">Add contact</button>

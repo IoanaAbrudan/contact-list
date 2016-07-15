@@ -13,11 +13,6 @@ app.controller('DashboardController', function($http, $state){
         url: '/v1/contacts',
     }).then(function (response) {    
      vm.contacts = response.data;
-   
-    
-
-
-
      debugger;
 });
 
