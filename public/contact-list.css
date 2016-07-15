@@ -63,7 +63,7 @@ form {
 } 
 
 .w3-padding-16 {
-    font-size: 30px;
+    font-size: 15px;
 }
 
 #button {
@@ -71,7 +71,11 @@ form {
    text-decoration: none;
    margin: 20px 5px;
 }
-
+.search{
+    justify-content: center;
+    margin: 20px 5px;
+    font-family: Arial; 
+}
 
 
 
