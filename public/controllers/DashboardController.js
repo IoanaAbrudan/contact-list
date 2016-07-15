@@ -14,6 +14,8 @@ app.controller('DashboardController', function($http, $state){
     }).then(function (response) {    
      vm.contacts = response.data;
      debugger;
+     vm.name=[];
+
 });
 
 
