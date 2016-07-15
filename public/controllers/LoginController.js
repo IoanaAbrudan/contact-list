@@ -27,11 +27,14 @@ app.controller('LoginController', function($http, $state){
             url: '/v1/session',
             data: vm.user
         }).success(function (response) {
+            console.log('ioana');
+            debugger;
             $state.go('dashboard');
+            
             
         }).error(function(response) {
              vm.errorMessage = response.err;
-            debugger;
+           
         });
     }
 });
