@@ -7,12 +7,20 @@
 var app = angular.module('contacts');
 app.controller('DashboardController', function($http, $state){
     var vm = this;
-    var contact = [];
-       $http({
-            method: 'GET',
-            url: '/v1/contacts',
+   
+    $http({
+        method: 'GET',
+        url: '/v1/contacts',
     }).then(function (response) {    
-     vm.contact = response.data;
+     vm.contacts = response.data;
+   
+    
+
+
+
      debugger;
 });
+
+
+
 });
