@@ -14,7 +14,6 @@ app.controller('DashboardController', function($http, $state, Auth, $filter){
     }).then(function (response){  
 
         var user = Auth.getAuth();
-        console.log(user._id);
 
         vm.contacts = response.data.filter(function(item){
             return item.user === user._id;

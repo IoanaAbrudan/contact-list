@@ -29,18 +29,14 @@ app.controller('LoginController', function($http, $state, Auth, AuthAPI, $cookie
         // })
         AuthAPI.login(vm.user)
          .success(function (response) {
-            console.log(response._id);
-            console.log(response.email);
             // $rootScope.id = response._id;
             Auth.setAuth(response);
-            debugger;
             $cookies.putObject('loginData', vm.user);
             $state.go('dashboard');
             
             
         }).error(function(response) {
              vm.errorMessage = response.err;
-            debugger;
         });
 
 }
