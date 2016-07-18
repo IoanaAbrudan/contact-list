@@ -5,4 +5,4 @@
 
 'use strict';
 
-angular.module('contacts', ['ui.router']);
+angular.module('contacts', ['ui.router', 'ngCookies']);

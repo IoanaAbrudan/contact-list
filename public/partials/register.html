@@ -67,11 +67,11 @@
         <input type="password" name="confirmPassword" class="w3-input" ng-change="register.checkPasswordValidity()" ng-model="register.user.confirmPassword" placeholder="Password">  
       </div>
       <div class="checkbox">
-        <input class="w3-check" type="checkbox">
+        <input class="w3-check" ng-model="register.submit" type="checkbox">
     <label class="w3-validate">Check me out</label>
       </div>
       <div class="alert alert-danger" ng-if="register.errorMessage" >{{register.errorMessage}}</div>
-      <button type="submit" ng-model="register.submit" class=" w3-radio btn btn-default">Submit</button> 
+      <button type="submit"  class=" w3-radio btn btn-default">Submit</button> 
     </form>  
     </div>
     

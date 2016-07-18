@@ -5,19 +5,22 @@
 
 
 var app = angular.module('contacts');
-app.controller('DashboardController', function($http, $state){
+app.controller('DashboardController', function($http, $state, Auth, $filter){
     var vm = this;
-   
+
     $http({
         method: 'GET',
         url: '/v1/contacts',
-    }).then(function (response) {    
-     vm.contacts = response.data;
-     debugger;
-     vm.name=[];
+    }).then(function (response){  
+
+        var user = Auth.getAuth();
+        console.log(user._id);
+
+        vm.contacts = response.data.filter(function(item){
+            return item.user === user._id;
+        });
+     
+    });
 
 });
 
-
-
-});

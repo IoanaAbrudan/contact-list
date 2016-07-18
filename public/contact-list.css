@@ -57,6 +57,7 @@ form {
 .body {
      background-color: #f7f7f7;   
 }
+
 .w3-radio {
     justify-content: center;
     align-items: center;
@@ -71,7 +72,7 @@ form {
    text-decoration: none;
    margin: 20px 5px;
 }
-.search{
+.search {
     justify-content: center;
     margin: 20px 5px;
     font-family: Arial; 
