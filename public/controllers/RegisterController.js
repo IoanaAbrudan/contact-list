@@ -4,7 +4,7 @@
  */
 
 var app = angular.module('contacts');
-app.controller('RegisterController', function($http, $state) {
+app.controller('RegisterController', function($http, $state, AuthAPI) {
     var vm = this;
 
     vm.user = {};
@@ -49,13 +49,17 @@ app.controller('RegisterController', function($http, $state) {
             return;
        }
 
-        $http({
-            method: 'POST',
-            url: '/v1/session/create',
-            data: vm.user
-        }).then(function (response){
-            $state.go('dashboard');
+        // $http({
+        //     method: 'POST',
+        //     url: '/v1/session/create',
+        //     data: vm.user
+        // }).then(function (response){
+        //     $state.go('dashboard');
              
+        // });
+
+        AuthAPI.register(vm.user).then(function (response) {
+            $state.go('dashboard');
         });
     };
 });

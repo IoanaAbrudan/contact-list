@@ -32,12 +32,14 @@ mongoose.connect('mongodb://localhost/contact-list');
  * Mongoose models
  */
 var User = require('./models/users');
+var Contact = require('./models/contacts');
 
 /**
  * Controllers
  */
 var Users = require('./controllers/users');
 var Session = require('./controllers/session');
+var Contacts = require('./controllers/contacts');
 
 /**
  * Passport init
@@ -64,10 +66,20 @@ app.route('/v1/session')
 app.route('/v1/session/create')
 .post(Session.register);
 
+app.route('/v1/contacts')
+.get(Contacts.all)
+.post(Contacts.create)
+
+app.route('/v1/contacts/:contactId')
+.get(Contacts.show)
+.put(Contacts.update)
+.delete(Contacts.destroy);
+
 /**
  * Route Params
  */
 app.param('userId', Users.user);
+app.param('contactId', Contacts.contact);
 
 app.use(express.static(path.resolve(__dirname, 'public')));
 

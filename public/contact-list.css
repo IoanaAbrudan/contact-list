@@ -57,7 +57,28 @@ form {
 .body {
      background-color: #f7f7f7;   
 }
-.w3-radio{
+
+.w3-radio {
     justify-content: center;
     align-items: center;
 } 
+
+.w3-padding-16 {
+    font-size: 15px;
+}
+
+#button {
+   text-align:center;
+   text-decoration: none;
+   margin: 20px 5px;
+}
+.search {
+    justify-content: center;
+    margin: 20px 5px;
+    font-family: Arial; 
+}
+
+
+
+
+

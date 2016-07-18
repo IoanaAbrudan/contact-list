@@ -5,7 +5,7 @@
 
 
 var app = angular.module('contacts');
-app.controller('LoginController', function($http, $state){
+app.controller('LoginController', function($http, $state, Auth, AuthAPI, $cookies){
     var vm = this;
 
     vm.user = {};
@@ -22,16 +22,23 @@ app.controller('LoginController', function($http, $state){
         });
 
          vm.errorMessage = '';
-         $http({
-            method: 'POST',
-            url: '/v1/session',
-            data: vm.user
-        }).success(function (response) {
+        //  $http({
+        //     method: 'POST',
+        //     url: '/v1/session',
+        //     data: vm.user
+        // })
+        AuthAPI.login(vm.user)
+         .success(function (response) {
+            // $rootScope.id = response._id;
+            Auth.setAuth(response);
+            $cookies.putObject('loginData', vm.user);
             $state.go('dashboard');
+            
             
         }).error(function(response) {
              vm.errorMessage = response.err;
-            debugger;
         });
-    }
+
+}
+      
 });
