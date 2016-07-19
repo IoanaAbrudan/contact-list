@@ -1,17 +1,16 @@
+<div> 
 <ul class="w3-ul w3-card-4"> 
  <label><input class="search w3-input w3-border" ng-model="searchText"></label>
-
     <li class="w3-padding-16" ng-repeat="contact in dashboard.contacts  | filter:searchText">
-    
-    <img src="https://www.renderosity.com/templates/renderositybootstrap/image/default_avatar.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
-    <span class="w3-xlarge"></span><br>
-    <p>{{contact.name}}</p>
-    <br>
-    <p>{{contact.email}}</p>
-    <p>{{contact.phone}}</p>
-    <p>{{contact.address}}</p>
-    <p>{{contact.occupation}}</p>
-    
+        <img src="https://www.renderosity.com/templates/renderositybootstrap/image/default_avatar.png" class="w3-left w3-circle w3-margin-right" style="width:60px">
+        <span class="w3-xlarge"></span><br>
+        <p>{{contact.name}}</p>
+        <br>
+        <p>{{contact.email}}</p>
+        <p>{{contact.phone}}</p>
+        <p>{{contact.address}}</p>
+        <p>{{contact.occupation}}</p>
     </li>
 </ul>
-<button type="submit" class=" w3-radio btn btn-default" id="button">Add contact</button>
+<button type="submit" class=" w3-radio btn btn-default" id="button" ng-click="dashboard.dashboard()">Add contact</button>
+</div>

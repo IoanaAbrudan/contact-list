@@ -59,6 +59,7 @@ app.controller('RegisterController', function($http, $state, AuthAPI) {
         // });
 
         AuthAPI.register(vm.user).then(function (response) {
+            debugger;
             $state.go('dashboard');
         });
     };

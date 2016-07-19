@@ -17,9 +17,16 @@ app.controller('DashboardController', function($http, $state, Auth, $filter){
 
         vm.contacts = response.data.filter(function(item){
             return item.user === user._id;
+
         });
-     
     });
 
+      vm.dashboard = function() {
+
+        $state.go('addContact');
+
+        }
 });
+
+
 

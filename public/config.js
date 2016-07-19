@@ -44,6 +44,15 @@ var config = function ($stateProvider, $urlRouterProvider) {
         checkLoggedIn: checkLoggedIn
       }
     })
+      .state('addContact', {
+      url:'/addContact',
+      templateUrl: 'partials/addContact.html',
+      controller: 'AddContact',
+      controllerAs: 'addContact',
+      resolve: {
+        checkLoggedIn: checkLoggedIn
+      }
+    })
 };
 
 angular.module('contacts').config(config);

@@ -1,0 +1,17 @@
+<div class="add">
+    <form class="w3-container" ng-submit="addContact.add()">
+        <label class="w3-label">Name</label>
+        <input class="w3-input" type="text" placeholder="Name" ng-model="addContact.contact.name">{{contact.name}}
+        <label class="w3-label">Email</label>
+        <input  class="w3-input" type="text" placeholder="Email" ng-model="addContact.contact.email">
+        <label class="w3-label">Address</label>
+        <input  class="w3-input" type="text" placeholder="Address" ng-model="addContact.contact.address">
+         <label class="w3-label">Phone</label>
+        <input  class="w3-input" type="text" placeholder="Phone" ng-model="addContact.contact.phone">
+        <label class="w3-label">Ocupation</label>
+        <input  class="w3-input" type="text" placeholder="Ocupation" ng-model="addContact.contact.ocupation">
+        <button type ="submit" class=" w3-radio btn btn-default">Add</button>
+
+    </form>
+
+</div>
